@@ -30,6 +30,9 @@ label {
 
 label {
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .bayan-img>img {
@@ -41,4 +44,8 @@ label {
     margin-bottom: 1.6rem;
     display: flex;
     justify-content: center;
+}
+
+.plus {
+    width: 1.1rem;
 }
