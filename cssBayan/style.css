@@ -1,13 +1,33 @@
-html{
+html {
     background-color: #DFDFDF;
     font-family: 'Sora', sans-serif;
 }
 
-h1{
-    font-size: 5em;
+@media (hover :hover) {
+
 }
 
-.bayan-container{
+h1 {
+    font-size: 5rem;
+    line-height: 2rem;
+    margin: 5 0 5 0rem;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #4c2275;
+    font-weight: 600;
+}
+
+.bayan-container {
     width: 60vw;
     margin: 0 auto;
+}
+
+.mem {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
 }
