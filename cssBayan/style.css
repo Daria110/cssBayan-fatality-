@@ -3,10 +3,6 @@ html {
     font-family: 'Sora', sans-serif;
 }
 
-@media (hover :hover) {
-
-}
-
 h1 {
     font-size: 5rem;
     margin-top: 4rem;
@@ -17,35 +13,49 @@ label {
     font-size: 1.6rem;
     color: #4c2275;
     font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
-.bayan-container {
+.container {
     width: 60vw;
     margin: 0 auto;
 }
 
-.mem {
-    cursor: pointer;
-}
-
-label {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.bayan-img>img {
-    max-width: 80%;
-}
-
 .bayan-img {
-    margin-top: 1.9rem;
-    margin-bottom: 1.6rem;
+    max-width: 0%;
+}
+
+.bayan-content {
     display: flex;
     justify-content: center;
+    
 }
 
 .plus {
     width: 1.1rem;
+}
+
+.bayan {
+    display: none;
+}
+
+.bayan:hover + .bayan-label {
+    color: black;
+}
+
+.bayan:checked ~ .bayan-content .bayan-img {
+    max-width: 80%;
+    margin-top: 1.9rem;
+    margin-bottom: 1.6rem;
+}
+
+@media (hover: hover) {
+    .bayan:hover ~ .bayan-content .bayan-img {
+        max-width: 80%;
+        margin-top: 1.9rem;
+        margin-bottom: 1.6rem;
+    }
+
 }
